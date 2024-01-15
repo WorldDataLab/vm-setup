@@ -54,6 +54,46 @@ Navigate into the cloned repository and verify that everything is working:
 cd vm-setup
 ls
 ```
+# Navigating RStudio Server
+Below is a basic guide on navigating and using RStudio Server. This guide assumes you have RStudio Server installed and configured on the VM.
+
+## Accessing RStudio Server
+1. Open your web browser and navigate to the URL of the RStudio Server. It's usually in the format http://<VM_IP>:8787, where VM_IP is the external IP address of the virtual machine. 
+2. Log in with your username and password.
+
+## Step 2: Generate SSH Key Pair (if you haven't already)
+Once logged in, you'll see the RStudio interface, which is divided into four panes:
+
+1. **Source Editor (Top-Left):** This is where you can write and edit your R scripts or R Markdown documents.
+
+2. **Console (Bottom-Left):** The R console is where you can directly interact with R by typing commands and seeing their output.
+
+3. **Environment/History/Connections (Top-Right):** This pane shows your current R environment, command history, and any active database connections.
+
+4. **Files/Plots/Packages/Help (Bottom-Right):** This pane includes tabs for viewing files in your working directory, viewing plots, managing packages, and accessing help documentation.
+
+
+## Basic Navigation:
+1. Setting Your Working Directory:
+
+Use the `setwd()` function or the Session > Set Working Directory menu to set your working directory.
+
+2. Creating a New Script:
+
+Click on File > New File > R Script to create a new R script.
+
+3. Running Code:
+
+Highlight the code in the script editor and click on the "Run" button or use the keyboard shortcut (Ctrl + Enter) to execute the code in the console.
+
+4. Installing and Loading Packages:
+
+Use the `install.packages()` function to install packages, and `library()` or `require()` to load them.
+
+5. Managing Files:
+
+Use the Files tab in the bottom-right pane to navigate your working directory. You can upload, download, and manage files here.
+
 
 # Adding and removing files from Google Cloud Storage.
 
