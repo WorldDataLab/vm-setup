@@ -15,8 +15,10 @@ ls -al ~/.ssh
 ```
 If there are no existing SSH keys like `id_rsa.pub`, `id_ecdsa.pub` or `id_ed25519.pub` generate a new key:
 
+Paste the text below, replacing the email used in the example with your GitHub email address.
+
 ```bash
-ssh-keygen -t ed25519 -C "username@gmail.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 ## Step 3: Adding a new SSH key to your GitHub account
@@ -40,7 +42,7 @@ sudo apt update
 sudo apt install git
 ```
 
-## Step 5: Step 6: Clone the GitHub Repository
+## Step 5: Clone the GitHub Repository
 Navigate to the directory where you want to clone the repository and use the git clone command.
 
 ```bash
