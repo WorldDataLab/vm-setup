@@ -76,7 +76,7 @@ Below is a basic guide on navigating and using RStudio Server. This guide assume
 1. Open your web browser and navigate to the URL of the RStudio Server. It's usually in the format http://<VM_IP>:8787, where VM_IP is the external IP address of the virtual machine. 
 2. Log in with your username and password.
 
-## Step 2: Generate SSH Key Pair (if you haven't already)
+## RStudio Interface Overview
 Once logged in, you'll see the RStudio interface, which is divided into four panes:
 
 1. **Source Editor (Top-Left):** This is where you can write and edit your R scripts or R Markdown documents.
@@ -88,7 +88,7 @@ Once logged in, you'll see the RStudio interface, which is divided into four pan
 4. **Files/Plots/Packages/Help (Bottom-Right):** This pane includes tabs for viewing files in your working directory, viewing plots, managing packages, and accessing help documentation.
 
 
-## Basic Navigation:
+## Basic Navigation
 1. Setting Your Working Directory:
 
 Use the `setwd()` function or the Session > Set Working Directory menu to set your working directory.
@@ -110,7 +110,7 @@ Use the `install.packages()` function to install packages, and `library()` or `r
 Use the Files tab in the bottom-right pane to navigate your working directory. You can upload, download, and manage files here.
 
 
-# Adding and removing files from Google Cloud Storage.
+# Adding and removing files from Google Cloud Storage
 
 ## Downloading
 These scripts download files from a bucket to a local directory on a VM.
