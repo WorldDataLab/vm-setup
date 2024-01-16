@@ -54,6 +54,19 @@ Navigate into the cloned repository and verify that everything is working:
 cd vm-setup
 ls
 ```
+
+
+# Copying Files from GCP Bucket to VM
+1. Connect to your VM using SSH
+2. Execute the following command to copy files from the GCP bucket to your local VM:
+
+```bash
+gsutil -m cp -r gs://bucket-location /home/username/
+```
+`-m:` Enables the use of multiple threads, making the transfer faster for large datasets. \
+`cp:` Indicates the copy command. \
+`-r: `Recursively copies directories and their contents.
+
 # Navigating RStudio Server
 Below is a basic guide on navigating and using RStudio Server. This guide assumes you have RStudio Server installed and configured on the VM.
 
